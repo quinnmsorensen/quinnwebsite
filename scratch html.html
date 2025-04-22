@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SpaceX Scratch Page</title>
+  <link rel="stylesheet" href="scratch.css" />
+
+  <!-- Custom inline styling -->
+  <style>
+    body {
+      background-color: #0d0d2b;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #00aaff;
+    }
+
+    header, section {
+      padding: 20px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .content-box {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    iframe {
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">🏠 Back to Professional Page</a>
+    <a href="#missions">🚀 Go to Missions</a>
+    <a href="webapp.html">🎮 Try the Wordle Game</a>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>Welcome to the SpaceX Scratch Page</h1>
+    <p>A quick look at the most exciting space company on Earth.</p>
+  </header>
+
+  <!-- About Section -->
+  <section class="background-section">
+    <h2 id="about">About SpaceX</h2>
+    <div class="content-box">
+      <p>SpaceX is a private aerospace company founded by Elon Musk in 2002. They aim to reduce space transportation costs and enable Mars colonization.</p>
+    </div>
+  </section>
+
+  <!-- Missions Section -->
+  <section>
+    <h2 id="missions">Major Missions</h2>
+    <div class="content-box">
+      <ol>
+        <li>Falcon 1
+          <ul>
+            <li>First privately developed liquid-fueled rocket to reach orbit</li>
+          </ul>
+        </li>
+        <li>Falcon 9
+          <ul>
+            <li>Reusable rocket</li>
+            <li>Used to launch Starlink satellites</li>
+          </ul>
+        </li>
+        <li>Starship
+          <ul>
+            <li>Interplanetary transport system</li>
+            <li>In development for Mars missions</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section>
+    <h2>Gallery</h2>
+    <div class="content-box">
+      <img src="https://www.spacex.com/static/images/share.jpg" alt="SpaceX Rocket" />
+    </div>
+  </section>
+
+  <!-- YouTube Embed Section -->
+  <section>
+    <h2>Watch a Launch</h2>
+    <div class="content-box">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/0qo78R_yYFA" title="SpaceX Launch Video" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- Tableau Embed Section: SpaceX Launch Stats -->
+  <section>
+    <h2>Interactive Dashboard: SpaceX Launch Stats</h2>
+    <div class="content-box">
+      <div class='tableauPlaceholder' id='viz1745275586661' style='position: relative'>
+        <noscript>
+          <a href='#'>
+            <img alt='Dashboard 1' src='https://public.tableau.com/static/images/Sp/SpaceXlaunches/Dashboard1/1_rss.png' style='border: none' />
+          </a>
+        </noscript>
+        <object class='tableauViz' style='display:none;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+          <param name='embed_code_version' value='3' />
+          <param name='site_root' value='' />
+          <param name='name' value='SpaceXlaunches&#47;Dashboard1' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+          <param name='static_image' value='https://public.tableau.com/static/images/Sp/SpaceXlaunches/Dashboard1/1.png' />
+          <param name='animate_transition' value='yes' />
+          <param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' />
+          <param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' />
+          <param name='language' value='en-US' />
+        </object>
+      </div>
+      <script type='text/javascript'>
+        var divElement = document.getElementById('viz1745275586661');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        vizElement.style.width = '100%';
+        vizElement.style.height = '627px';
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+      </script>
+    </div>
+  </section>
+
+  <!-- Optional JavaScript File -->
+  <script src="scripts.js"></script>
+</body>
+</html>

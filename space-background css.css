@@ -1,0 +1,61 @@
+/* Space background styling */
+body {
+    
+    background-size: cover;
+    color: white; /* White text for contrast against the dark background */
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    overflow: hidden; /* To ensure no scrollbars appear */
+  }
+  
+  /* Twinkling star animation */
+  @keyframes twinkle {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
+  .star {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    animation: twinkle 1.5s infinite ease-in-out;
+  }
+  
+  /* Styling for the rest of the page */
+  header, section {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay for text readability */
+    margin: 20px 0;
+    border-radius: 8px;
+  }
+  
+  h1, h2 {
+    color: #fff;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  }
+  
+  .content-box {
+    background-color: rgba(255, 255, 255, 0.2); /* Light background behind content */
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  nav {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    gap: 15px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    color: #f39c12; /* Highlight color for links */
+  }
+  
